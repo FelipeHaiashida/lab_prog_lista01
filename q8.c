@@ -1,14 +1,16 @@
 #include <stdio.h>
+#include <math.h>
 
-int main() {
-    int numero, quadrado;
+int main(){
+    int x, y;
 
-    printf("Digite um número inteiro: ");
-    scanf("%d", &numero);
+    puts("Entre com um valor: ");
+    scanf("%d",&x);
 
-    quadrado = numero * numero;
+    y = pow(x, 2);
 
-    printf("O quadrado de %d é: %d\n", numero, quadrado);
+    printf("Resultado: %d\n",y);
+
 
     return 0;
 }
